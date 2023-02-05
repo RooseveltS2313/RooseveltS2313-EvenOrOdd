@@ -14,6 +14,19 @@ public class Lab {
      * @return a String "Even" if n is even, and "Odd" of in is odd. The test cases are case-sensitive.
      */
     public String decide(int n){
-        return "";
+        /* you could use these arrays but...
+        int[] evens = {0,2,4,6,8}; 
+        int[] odds = {1,3,5,7,9}; 
+        */
+
+        int modResult = n % 2;
+        // thank the test cases for me including the -1 catch which i do not think i need if I switch 1 and -1 with 0
+        if (modResult == 1 || modResult == -1)
+        return "Odd";
+        // else if (modResult == 0 )
+        return "Even";
+
+        // return null;
+        
     }
 }
